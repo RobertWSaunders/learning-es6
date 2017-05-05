@@ -8,4 +8,27 @@
 
 //mostly use promises for AJAX requests
 //promises are native to JS now
-const promise = new Promise();
+//resolve and reject are given
+let promise = new Promise((resolve, reject) = {
+  resolve();
+
+});
+
+//fires if the promise is resolved
+promise.then(() => {
+
+});
+
+//fires when the promise rejects
+promise.catch(() => {
+
+});
+
+const url = "https://jsonplaceholder.typicode.com/posts";
+
+//when using the fetch method, if the server sends an error code, then it wont go into the catch block
+fetch(url).then(response => response.json()).then(() => console.log("Cool"));
+
+//Axcios
+//superagent
+//jquery if you have to
