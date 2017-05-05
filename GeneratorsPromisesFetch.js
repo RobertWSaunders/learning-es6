@@ -70,3 +70,4 @@ const names = [];
 for (let name of TeamIterator(engineeringTeam)) {
   names.push(name);
 }
+//can dive into generators more when seen in field
